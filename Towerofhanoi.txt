@@ -1,0 +1,11 @@
+.data
+question: .asciiz "How many blocks are there in the tower of hanoi\n"
+result: .asciiz "Result is: "
+
+.text
+main:
+la $a0,question
+li $v0,4
+syscall
+li $v0,5
+syscall
