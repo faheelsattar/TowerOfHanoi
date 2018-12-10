@@ -18,4 +18,12 @@ tofhanoi:
 mul $t1,$t1,$t2
 sub $t0,$t0,$t3
 bgtz $t0,tofhanoi
+sub $t1,$t1,$t3
+la $a0,result
+li $v0,4
+syscall
+move $a0,$t1
+li $v0,1
+syscall
+
 
